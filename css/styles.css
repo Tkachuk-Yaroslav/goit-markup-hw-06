@@ -613,11 +613,39 @@ body {
     background-color: transparent;
     padding: 8px 16px;
     min-width: 264px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-right: 24px;
 }
 
-.footer-submit {}
+.footer-email::placeholder {    
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
 
-.footer-submit-icon {}
+
+
+.footer-submit {
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    border-color: transparent;
+    width: 165px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    padding: 8px 0 8px 24px;
+    text-align: left;
+}
+
+.footer-submit-icone {
+}
 
 /**-------------------------------MODAL----------------------------*/
 .backdrop {
