@@ -507,7 +507,7 @@ body {
 }
 
 .footer-part-two {
-
+    margin-right: 80px;
 }
 
 .footer-title {
@@ -591,6 +591,33 @@ body {
     color: var(--footer-text-color, #F4F4FD);
     max-width: 264px;
 }
+
+/***************************FOOTER-FORM*************************/
+
+.footer-part-three {}
+
+.footer-form {}
+
+.footer-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color, #ffffff);
+    margin-bottom: 16px;
+}
+
+.footer-email {
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    min-width: 264px;
+}
+
+.footer-submit {}
+
+.footer-submit-icon {}
 
 /**-------------------------------MODAL----------------------------*/
 .backdrop {
