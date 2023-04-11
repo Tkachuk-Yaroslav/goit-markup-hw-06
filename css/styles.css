@@ -628,9 +628,23 @@ body {
     color: #FFFFFF;
 }
 
+.input-footer-wrap {
+    position: relative;
+    display: inline;
+}
 
+.input-footer-wrap:hover .footer-submit,
+.input-footer-wrap:focus .footer-submit {
+    background-color: var(--btn-bg-in-hover, #404BBF);
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 
 .footer-submit {
+    position: absolute;
+    /* display: inline-block; */
     background-color: #4D5AE5;
     border-radius: 4px;
     border-color: transparent;
@@ -642,10 +656,29 @@ body {
     color: #FFFFFF;
     padding: 8px 0 8px 24px;
     text-align: left;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+/* .footer-submit:hover,
+.footer-submit:focus {
+    background-color: var(--btn-bg-in-hover, #404BBF);
+    border-color: transparent;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 2px 1px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+} */
+
 .footer-submit-icone {
+    position: absolute;
+    top: 50%;
+    left: 117px;
+    transform: translateY(-50%);
 }
+
+
 
 /**-------------------------------MODAL----------------------------*/
 .backdrop {
@@ -756,7 +789,9 @@ body {
     display: inline-block;
 }
 
-
+.input-wrap {
+    position: relative;
+}
 
 .modal-input {
     width: 100%;
@@ -769,6 +804,19 @@ body {
 
 .modal-input:focus {    
     border-color: #4D5AE5;
+}
+
+.modal-input:focus + .modal-icon {
+    fill: #4D5AE5;
+}
+
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 19px;
+    transform: translateY(-50%);
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-textarea {

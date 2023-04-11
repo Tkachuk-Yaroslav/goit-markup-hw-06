@@ -381,13 +381,15 @@
         </div>
         
         <div class="footer-part-three">
-          <form class="footer-form">
-            <h3 class="footer-form-title">Subscribe</h3>
+          <h3 class="footer-form-title">Subscribe</h3>
+          <form class="footer-form">            
             <input type="email" name="mail" id="" placeholder="E-mail" class="footer-email">
-            <input type="submit" value="Subscribe" class="footer-submit">
-            <svg width="24" height="24" class="footer-submit-icone">
-              <use href="./images/icons.svg#icon-subscribe"></use>
-            </svg>           
+            <div class="input-footer-wrap">
+              <input type="submit" value="Subscribe" class="footer-submit">
+              <svg width="24" height="24" class="footer-submit-icone">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </div>           
           </form>
         </div>
       </div>
@@ -407,15 +409,30 @@
         <form>
           <div class="modal-field">
             <label for="name" class="modal-label">Name</label>
-            <input type="text" name="name" id="name" class="modal-input">
+            <div class="input-wrap">
+              <input type="text" name="name" id="name" class="modal-input">
+              <svg class="modal-icon" height="18px" width="18px">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="tel" class="modal-label">Phone</label>
-            <input type="tel" name="tel" id="tel" class="modal-input">
+            <div class="input-wrap">
+              <input type="tel" name="tel" id="tel" class="modal-input">
+              <svg class="modal-icon" height="24px" width="18px">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="mail" class="modal-label">Email</label>
-            <input type="email" name="mail" id="mail" class="modal-input">
+            <div class="input-wrap">
+              <input type="email" name="mail" id="mail" class="modal-input">
+              <svg class="modal-icon" height="24px" width="18px">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field margin">
             <label for="comment" class="modal-label">Comment</label>
